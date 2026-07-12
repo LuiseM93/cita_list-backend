@@ -40,6 +40,18 @@ export default function Header({ session, profile, onLoginClick, onLogout }: Hea
             </div>
           </div>
           <div className="flex gap-2 items-center">
+            {profile?.plan === "monthly" && (
+              <a
+                href="https://billing.stripe.com/p/login/bJe28j6lxczw1Cb4zY5wI00"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gestionar suscripción"
+                className="text-on-surface-variant hover:text-primary hover:opacity-80 transition-all h-10 w-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50"
+                title="Gestionar suscripción"
+              >
+                <span className="material-symbols-outlined text-[22px]">manage_accounts</span>
+              </a>
+            )}
             <button 
               onClick={onLogout}
               aria-label="profile" 
