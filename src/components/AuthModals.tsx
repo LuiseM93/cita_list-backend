@@ -32,8 +32,8 @@ export default function AuthModals({ showLogin, showRegister, onClose, onSwitchT
         onClose();
       }
     } catch (err: any) {
-      console.error(err);
-      showToast("Error al iniciar sesión.");
+      console.error("Excepción en handleLogin:", err);
+      // No mostramos toast genérico aquí porque a veces arroja falsos positivos al desmontar el modal
     } finally {
       setLoading(false);
     }
@@ -88,8 +88,7 @@ export default function AuthModals({ showLogin, showRegister, onClose, onSwitchT
         onClose();
       }
     } catch (err: any) {
-      console.error(err);
-      showToast("Error al registrarse.");
+      console.error("Excepción en handleRegister:", err);
     } finally {
       setLoading(false);
     }
