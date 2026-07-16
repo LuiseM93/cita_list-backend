@@ -58,7 +58,7 @@ export default function LegalPage() {
             <p>Para los usuarios de la versión sin registro (Invitados), citalist no se hace responsable por la pérdida de datos derivada del borrado de caché del navegador o daño del dispositivo, ya que todo se guarda de manera local. Recomendamos crear una cuenta para la sincronización en la nube.</p>
             
             <h3 className="font-bold text-[16px]">4. Pagos y Suscripciones</h3>
-            <p>Las suscripciones mensuales y los pagos de "Acceso de por Vida" no son reembolsables una vez activados, a menos que exista una falla técnica comprobable por parte de nuestro sistema.</p>
+            <p>Las suscripciones mensuales y los pagos de "Acceso Vitalicio" no son reembolsables una vez activados, a menos que exista una falla técnica comprobable por parte de nuestro sistema.</p>
           </div>
         </section>
 

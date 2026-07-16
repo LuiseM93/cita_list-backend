@@ -70,8 +70,8 @@ export default function PremiumBanner({ session, onLoginRequest, showToast }: Pr
           </div>
           <div className="flex justify-between items-start">
             <div className="flex flex-col">
-              <span className="font-headline-sm text-[18px] font-bold text-on-surface">Acceso de por Vida</span>
-              <span className="font-body-md text-sm text-on-surface-variant">Pago único, sin cargos mensuales</span>
+              <span className="font-headline-sm text-[18px] font-bold text-on-surface">Acceso Vitalicio</span>
+              <span className="font-body-md text-sm text-on-surface-variant">Pago único · Mientras exista el servicio</span>
             </div>
             <div className="flex flex-col items-end">
               <span className="font-headline-sm text-primary font-bold">$499 MXN</span>
@@ -80,7 +80,7 @@ export default function PremiumBanner({ session, onLoginRequest, showToast }: Pr
           <div className="bg-secondary-container/50 p-2 rounded-lg mt-1 border border-secondary-container">
             <span className="font-body-md text-[13px] text-secondary flex items-start gap-1 leading-snug">
               <span className="material-symbols-outlined text-[16px] text-primary">info</span>
-              La opción más popular, se paga sola en 5 meses. Acceso de por vida con un solo pago.
+              Acceso ilimitado a la versión actual con un solo pago. Sin cargos mensuales.
             </span>
           </div>
           <button 
@@ -88,7 +88,7 @@ export default function PremiumBanner({ session, onLoginRequest, showToast }: Pr
             onClick={() => handleCheckout('payment', 'price_1TrWvN1E63kseKczSWq8yzzE')}
             className="w-full mt-1 bg-primary text-on-primary font-button-text text-button-text h-[44px] rounded-lg flex items-center justify-center gap-2 hover:bg-on-primary-fixed-variant transition-colors disabled:opacity-70"
           >
-            {loadingLifetime ? 'Redirigiendo...' : 'Obtener Acceso de por Vida'}
+            {loadingLifetime ? 'Redirigiendo...' : 'Obtener Acceso Vitalicio'}
           </button>
         </div>
         
